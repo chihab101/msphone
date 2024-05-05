@@ -1,0 +1,1691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>ms-phone</title>
+    <style>
+        body{
+    background: linear-gradient(45deg,rgb(91, 255, 59),rgb(255, 248, 148),rgb(191, 79, 255));
+padding: 0;
+margin: 0;
+text-align: center;
+}
+header{
+    width: 100%;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+}
+header .me{
+    width: 40%;
+    height: 100px;
+    background-color: rgb(147, 8, 228);
+    float: right;
+}
+.me h1{
+    float: left;
+    margin-left: 10px;
+    margin-top: 30px;
+    color: #ffffff;
+}
+.me .logo{
+    width: 15%;
+    float: right;
+}
+header .ul{
+    float: left;
+    width: 60%;
+    height: 100px;
+    background-color: rgb(147, 8, 228);
+    padding: 0;
+    margin: 0;
+    
+}
+.ul img{
+    float: left;
+width: 8%;
+margin-left: 40px;
+margin-top: 20px;
+}
+h3{
+    margin: 10;
+}
+main{
+    margin: 0;
+    padding: 0;
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+  
+}
+.card{
+    position: relative;
+    width: 20%;
+    height: auto;
+    margin: 5px;
+    transition: 0.5s ease;
+    background: #535151;
+    text-align: center;
+    border: 3px solid rgb(100, 100, 100);
+
+}
+.card .card-img{
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+     
+}
+.card-img img{
+    width: 90%;
+    
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s ease;
+    opacity: 0.5;
+}
+.card p{
+    text-align: center;
+    margin-top: 85%;
+    width: 100%;
+    background-color: rgb(141, 141, 141);
+    position: absolute;
+    color: #ffffff;
+}
+.card button{
+margin-top: 90%;
+width: 100%;
+height: 30px;
+background-color: rgb(140, 22, 236);
+color: #ffffff;
+}
+.card:hover .cont{
+    opacity: 0;
+}
+.card:hover .card-img img{
+    opacity: 1;
+    transform: scale(1.1);
+}
+h3{
+    width: 100%;
+    color: #000000;
+    background: rgba(233, 235, 234, 0.336);
+    height: 50px;
+    padding-top: 20px;
+    margin-top: 10px;
+}
+#button:hover{
+    background-color: #ffffff;
+    color: #2d0036;
+}
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: #7115a7;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+footer img{
+    width: 40px;
+    margin-bottom: 10px;
+    padding-left: 40px;
+}
+.copy{
+    font-size: 20px;
+    color: #ffffff;
+    margin-left: 10px;
+}
+@media only screen and (min-width:100px ) and (max-width:480px ){
+    body{
+        background: linear-gradient(45deg,rgb(91, 255, 59),rgb(255, 248, 148),rgb(191, 79, 255));
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    }
+    header{
+        width: 100%;
+        height: 70px;
+        padding: 0;
+        margin: 0;
+    }
+    header .me{
+        width: 40%;
+        height: 70px;
+        background-color: rgb(147, 8, 228);
+        float: right;
+    }
+    .me h1{
+        float: left;
+        margin-left: 0px;
+        margin-top: 30px;
+        font-size: 12px;
+        color: #ffffff;
+    }
+    .me .logo{
+        width: auto;
+        height: 100%;
+        float: right;
+    }
+    header .ul{
+        float: left;
+        width: 60%;
+        height: 70px;
+        background-color: rgb(147, 8, 228);
+        padding: 0;
+        margin: 0;
+        
+    }
+    .ul img{
+        float: left;
+    width: 15%;
+    margin-left: 20px;
+    margin-top: 20px;
+    }
+    h3{
+        margin: 10;
+    }
+    main{
+        margin: 0;
+        padding: 0;
+        display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+      
+    }
+    .card{
+        position: relative;
+        width: 40%;
+        height: auto;
+        margin: 5px;
+        transition: 0.5s ease;
+        background: #636262d5;
+        text-align: center;
+        border: 3px solid rgb(0, 0, 0);
+    
+    }
+    .card .card-img{
+        position: absolute;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+         
+    }
+    .card-img img{
+        width: 90%;
+        opacity: 0.8;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        transition: 0.5s ease;
+    }
+    .card p{
+        text-align: center;
+        margin-top: 85%;
+        width: 100%;
+        background-color: rgb(141, 141, 141);
+        position: absolute;
+        color: #ffffff;
+    }
+    .card button{
+    margin-top: 90%;
+    width: 100%;
+    background-color: rgb(121, 8, 250);
+    color: #ffffff;
+    
+    }
+    .card:hover .cont{
+        opacity: 0;
+    }
+    .card:hover .card-img img{
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    h3{
+        width: 100%;
+        color: #000000;
+        background: rgba(233, 235, 234, 0.336);
+        height: 50px;
+        padding-top: 20px;
+        margin-top: 10px;
+    }
+    #button:hover{
+        background-color: #ffffff;
+        color: #2d0036;
+    }
+    footer{
+        width: 100%;
+        height: 80px;
+        background-color: #7115a7;
+        text-align: center;
+        padding-top: 10px;
+        margin-top: 20px;
+    }
+    footer img{
+        width: 40px;
+        margin-bottom: 10px;
+        padding-left: 40px;
+    }
+    .copy{
+        font-size: 20px;
+        color: #ffffff;
+        margin-left: 10px;
+    }
+}
+@media only screen and (min-width:481px ) and (max-width:768px ) {
+    body{
+        background: linear-gradient(45deg,rgb(91, 255, 59),rgb(255, 248, 148),rgb(191, 79, 255));
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    }
+    header{
+        width: 100%;
+        height: 100px;
+        padding: 0;
+        margin: 0;
+    }
+    header .me{
+        width: 40%;
+        height: 100px;
+        background-color: rgb(147, 8, 228);
+        float: right;
+    }
+    .me h1{
+        float: left;
+        font-size: 25px;
+        margin-left: 10px;
+        margin-top: 35px;
+        color: #ffffff;
+    }
+    .me .logo{
+        width: 15%;
+        float: right;
+    }
+    header .ul{
+        float: left;
+        width: 60%;
+        height: 100px;
+        background-color: rgb(147, 8, 228);
+        padding: 0;
+        margin: 0;
+        
+    }
+    .ul img{
+        float: left;
+    width: 8%;
+    margin-left: 40px;
+    margin-top: 25px;
+    }
+    h3{
+        margin: 10;
+    }
+    main{
+        margin: 0;
+        padding: 0;
+        display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+      
+    }
+    .card{
+        position: relative;
+        width: 30%;
+        height: auto;
+        margin: 5px;
+        transition: 0.5s ease;
+        background: #444444d2;
+        text-align: center;
+        border: 3px solid rgb(0, 0, 0);
+    
+    }
+    .card .card-img{
+        position: absolute;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+         
+    }
+    .card-img img{
+        width: 90%;
+        opacity: 0.8;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        transition: 0.5s ease;
+    }
+    .card p{
+        text-align: center;
+        margin-top: 85%;
+        width: 100%;
+        background-color: rgb(141, 141, 141);
+        position: absolute;
+        color: #ffffff;
+    }
+    .card button{
+    margin-top: 90%;
+    width: 100%;
+    background-color: rgb(139, 11, 245);
+    color: #ffffff;
+    }
+    .card:hover .cont{
+        opacity: 0;
+    }
+    .card:hover .card-img img{
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    h3{
+        width: 100%;
+        color: #000000;
+        background: rgba(233, 235, 234, 0.336);
+        height: 50px;
+        padding-top: 20px;
+        margin-top: 10px;
+    }
+    #button:hover{
+        background-color: #ffffff;
+        color: #2d0036;
+    }
+    footer{
+        width: 100%;
+        height: 80px;
+        background-color: #7115a7;
+        text-align: center;
+        padding-top: 10px;
+        margin-top: 20px;
+    }
+    footer img{
+        width: 40px;
+        margin-bottom: 10px;
+        padding-left: 40px;
+    }
+    .copy{
+        font-size: 20px;
+        color: #ffffff;
+        margin-left: 10px;
+    }
+    }
+    @media only screen and (min-width:969px ) and (max-width:1279px ){
+        body{
+            background: linear-gradient(45deg,rgb(91, 255, 59),rgb(255, 248, 148),rgb(191, 79, 255));
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        }
+        header{
+            width: 100%;
+            height: 100px;
+            padding: 0;
+            margin: 0;
+        }
+        header .me{
+            width: 40%;
+            height: 100px;
+            background-color: rgb(147, 8, 228);
+            float: right;
+        }
+        .me h1{
+            float: left;
+            margin-left: 10px;
+            margin-top: 30px;
+            color: #ffffff;
+        }
+        .me .logo{
+            width: 15%;
+            float: right;
+        }
+        header .ul{
+            float: left;
+            width: 60%;
+            height: 100px;
+            background-color: rgb(147, 8, 228);
+            padding: 0;
+            margin: 0;
+            
+        }
+        .ul img{
+            float: left;
+        width: 8%;
+        margin-left: 40px;
+        margin-top: 20px;
+        }
+        h3{
+            margin: 10;
+        }
+        main{
+            margin: 0;
+            padding: 0;
+            display: flex;
+           flex-wrap: wrap;
+           justify-content: center;
+          
+        }
+        .card{
+            position: relative;
+            width: 20%;
+            height: auto;
+            margin: 5px;
+            transition: 0.5s ease;
+            background: #535151;
+            text-align: center;
+            border: 3px solid rgb(11, 154, 236);
+        
+        }
+        .card .card-img{
+            position: absolute;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+             
+        }
+        .card-img img{
+            width: 90%;
+            opacity: 0.8;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            transition: 0.5s ease;
+            opacity: 0.5;
+        }
+        .card p{
+            text-align: center;
+            margin-top: 85%;
+            width: 100%;
+            background-color: rgb(141, 141, 141);
+            position: absolute;
+            color: #ffffff;
+        }
+        .card button{
+        margin-top: 90%;
+        width: 100%;
+        background-color: rgb(146, 12, 255);
+        color: #ffffff;
+        }
+        .card:hover .cont{
+            opacity: 0;
+        }
+        .card:hover .card-img img{
+            opacity: 1;
+            transform: scale(1.1);
+        }
+        h3{
+            width: 100%;
+            color: #000000;
+            background: rgba(233, 235, 234, 0.336);
+            height: 50px;
+            padding-top: 20px;
+            margin-top: 10px;
+        }
+        #button:hover{
+            background-color: #ffffff;
+            color: #2d0036;
+        }
+        footer{
+            width: 100%;
+            height: 80px;
+            background-color: #7115a7;
+            text-align: center;
+            padding-top: 10px;
+            margin-top: 20px;
+        }
+        footer img{
+            width: 40px;
+            margin-bottom: 10px;
+            padding-left: 40px;
+        }
+        .copy{
+            font-size: 20px;
+            color: #ffffff;
+            margin-left: 10px;
+        }
+    }
+
+    @media only screen and (min-width:1280px ) and (max-width:2000px ){
+        body{
+            background: linear-gradient(45deg,rgb(91, 255, 59),rgb(255, 248, 148),rgb(191, 79, 255));
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        }
+        header{
+            width: 100%;
+            height: 100px;
+            padding: 0;
+            margin: 0;
+        }
+        header .me{
+            width: 40%;
+            height: 100px;
+            background-color: rgb(147, 8, 228);
+            float: right;
+        }
+        .me h1{
+            float: left;
+            margin-left: 10px;
+            margin-top: 30px;
+            color: #ffffff;
+        }
+        .me .logo{
+            width: 15%;
+            float: right;
+        }
+        header .ul{
+            float: left;
+            width: 60%;
+            height: 100px;
+            background-color: rgb(147, 8, 228);
+            padding: 0;
+            margin: 0;
+            
+        }
+        .ul img{
+            float: left;
+        width: 8%;
+        margin-left: 40px;
+        margin-top: 20px;
+        }
+        h3{
+            margin: 10;
+        }
+        main{
+            margin: 0;
+            padding: 0;
+            display: flex;
+           flex-wrap: wrap;
+           justify-content: center;
+          
+        }
+        .card{
+            position: relative;
+            width: 20%;
+            height: auto;
+            margin: 5px;
+            transition: 0.5s ease;
+            background: #535151;
+            text-align: center;
+            border: 3px solid rgb(100, 100, 100);
+        
+        }
+        .card .card-img{
+            position: absolute;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+             
+        }
+        .card-img img{
+            width: 90%;
+            
+            top: 0;
+            left: 0;
+            bottom: 0;
+            transition: 0.5s ease;
+            opacity: 0.5;
+        }
+        .card p{
+            text-align: center;
+            margin-top: 85%;
+            width: 100%;
+            background-color: rgb(141, 141, 141);
+            position: absolute;
+            color: #ffffff;
+        }
+        .card button{
+        margin-top: 90%;
+        width: 100%;
+        height: 30px;
+        background-color: rgb(0, 192, 16);
+        color: #ffffff;
+        }
+        .card:hover .cont{
+            opacity: 0;
+        }
+        .card:hover .card-img img{
+            opacity: 1;
+            transform: scale(1.1);
+        }
+        h3{
+            width: 100%;
+            color: #000000;
+            background: rgba(233, 235, 234, 0.336);
+            height: 50px;
+            padding-top: 20px;
+            margin-top: 10px;
+        }
+        #button:hover{
+            background-color: #ffffff;
+            color: #2d0036;
+        }
+        footer{
+            width: 100%;
+            height: 80px;
+            background-color: #7115a7;
+            text-align: center;
+            padding-top: 10px;
+            margin-top: 20px;
+        }
+        footer img{
+            width: 40px;
+            margin-bottom: 10px;
+            padding-left: 40px;
+        }
+        .copy{
+            font-size: 20px;
+            color: #ffffff;
+            margin-left: 10px;
+        }
+    }
+    
+    </style>
+</head>
+    <body>  
+        <header>
+         <div class="me">
+           <img class="logo" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii1VNJNhkQlfSHDKPp4w5OsuOvoUHW-9j92YWfsTxWvTrc8I_-tGWBB62qm_njvvImN2gTuQ8l97P_fHQrz0Q6qsCb3cGpzOnZBPjBtkKG5zNKKUOdKL2SfI78hXSrmHJm4t9kimQSo35fpWz1ClYmE7kB9-THeBaaf-XOfB6FeJj8MlkpCFYxmnlXfA/s407/logo.png" alt="">    
+           <h1>MS PHONE</h1> 
+         </div>    
+             <ul class="ul">
+               <a class="image" href="#"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgO94LhbPhThuDvfyyjjHhIfUIp9nwjsOwioPYqgcfIFjWOLpe9HO0-YE7Wb-9gnMpYgYy_XGmsFCyYG9sPYz87iqcCmuQxA1ywAVue60COMi6Pd9kNEaG7agoOh2bHY9yvQX3s73_Blw8Aa5wVyJJ1BV5dTpekvrSJsSndzLsD_cE0gpDG3dLzwYB0-w/s512/bouton-daccueil.png" alt=""></a>
+               <a class="image" href="headphones.html"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSzcMR_8UryrCWnPwolfpXvuQZhlxj3a8os_Pj3Mk2jgNbeRi-V3ixCiLWX1EmaR9Kla8rugXqj1Tiit7piOQ9tLB4erxGnrVnaoiJ3kAjNC6mETjkqK92OVut0ZO08kngcwQaRrj3MccdFfUQY6M-AZuGx-hnl319AAohnDmvEb5u0JNP_CgQ6gsVoQ/s512/casque-de-musique.png" alt=""></a>
+               <a class="image" href="question.html"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlU2Pf-cF1DRIusOVWMKPYnKELsHBExILSkkzqAaOIkAVa1KCb3v6pGMYnCylTvo1GzQC1DnB9LjBsjgmzZH2vi_iYYcWEvduVsSRGUcCNSWlpelvo7ulIpnR9cLm7lRmSHlm0q9PJTky5myWakWYUWLbtRYfKJxx3LLR4N75fZFUfqfTRl1OkYZoSWA/s512/question.png" alt=""></a>
+              </ul>
+     </header>
+    <h3>Samsung</h3>
+              <main>
+             <br>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiFt04QXZHJRqsLoupDJ6oN0p72iqdmX238EwDFjdQRXANsyJwq5l94PJz5Rn7bGezZxssiqKIubsEAl6_NhgfGWS3S7CsTEKGfV1RNCUeda22nVPvz_dtA-CPc5mr4VznJdWntkDIv2IdVZ5juIHu6S6wZkCPJyxiOUc4mEY63c-0BMlUuQf6S_K9Wg/s500/a52-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>Samsung A52</p>
+                     </div>
+                     <button id="button" onclick="a52()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0_EdSsUOQLSBuNwhNZZqX8v-v4-FiiN07YmTJ_OF2_55GAZ4Qs7zNwvBRRrdFYelxTA0QOO7dPyo-R0JZx007R8pL4olKl_Ru-x-xPQXbjWxBTJsoe0xoI73LavybHKkGRmFWt1gQ9_0ra6WIU1Z3-b4cymfv_mapD7oYndCUJhktGlV3-Sr0JcArog/s500/samsung_s21-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>Samsung S21</p>
+                     </div>
+                     <button id="button" onclick="s21()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2rC5EhN_HVXzRUa3Fu_3cqHwHE2sF1AJWSE5YQ_hHBHKh5TRuc6tdaNd0O1Q6XXy9xfWMb5tqwT0h5D-GGULubO4DhzZbeSw9d2l6Xwy2cyMOMKNzWUxrckJ5RKZ5uEZDlD9BC7ooA2ObiZ3ZctHF4j8usTDV7wq9qO_ePEYu3AYeQj-g5N5uE7Xm0g/s568/samsung_a51-removebg-preview.png" alt=""> 
+              </div>
+              <div class="cont">
+                 <p>Samsung A51 5G</p>
+                 </div>
+                 <button id="button" onclick="a515g()">buy</button>
+         </div>
+              <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimnkCfcUR4Py0rXL5pGhgfdob06_eJYQGrWpZ_IAJpHebFvTreVEOfIUS6eQh_cmdoPRWTd-QZkti4PcN0w13hw8beV_nemlYwJOJKbjHIXIkEN3-TMeq2J2gpcYnwN7Gx4QeMFPzkesrdTApRTiQ9q8ceY-wtdtFtpyh-k_ZxTSIO8vwWK9_HiSThhw/s500/a50s-removebg-preview.pn" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>Samsung A50s </p>
+                     </div>
+                     <button id="button" onclick="a50s()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwkaAbVWmvJQqgtujsHMXfQBFAjZM5-ON85caF3isxusQodGD2VEe93baWpk_KhM5nSYXBB5rMnCLTUPMZQCB6104TxBeATVHmoH428EUY68kVrKf06_-RrZMnjOxSr40sHqhAmcYmTSNCcixxDSAthNTsWgQ43FizUrHYMQ5E2gSLEaWrWdae3YnntA/s497/samsung-a13-5g-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>Samsung A13 5G</p>
+                     </div>
+                     <button id="button" onclick="a135g()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkyXCUD7pA4KWCSrxUeqt6U1F8pEuqdHaVw_Hv9g1B1qQ94kdzi4qZoup4SqqJzf33K7agTc0X7PLZSGX34VGXve7YEzmo6fkeXy0Ig9LB-v8Yw_IT-Nb5Dr637Dv4XNpmfsTt09f8xPg_RxahDXzD6z7Au-20pVvlbpKJpYDd4Tqg3cBQ7XnyCQcMAg/s256/a42_5g-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>Samsung A42 5G</p>
+                     </div>
+                     <button id="button" onclick="a425g()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0IjZPQuNQ_h7cF6u8byShktRXZq2Qz0PIXiW8jwW9ULGzDm9rE5bDLPjV0cXrLLOgFpjs-21wK9jv1QK_tblAbei5Zg-DGdZ_NH6KKGEIjZJeQX-qfG1nS74Wd6GKkLbJJmkX7-xF3z65DL28txThpsAAgB-gCgE-9nqrIC_sS0CyLuSqtwgUe6nfFw/s500/galaxy_a70-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>Samsung A70</p>
+                     </div>
+                     <button id="button" onclick="a70()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhF4E-7SCnTOxIOyW_wON8mJ9uDsr0zVJ99tJKImcYENZgWp0yDFKfnYYnnL9obXqeLKMuhIXvFIHg5IX_C7iARP-Cqi3jBV5Qzeb4tAlBWLsWvOwVRYY4QeJ2dH0B6z5CviEjNaNuP3NBatcuQJOhnXo-T6QXwFd5hqxuPg2QRWL600Pr5CO3wmWVm4w/s500/a14-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>Samsung A14</p>
+                     </div>
+                     <button id="button" onclick="a14()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOiAxhU6vHbU_EQWwKSt_tFPhg0JeR2VBj05KVZwWHMH9RW_KXSU61JpihHM3mKq0eYN25CVIpiQZIWn-CS56Y52H7DCbX3QomHgNJ9xtcVyfjEQcB5zEdPzslVoQw3ZhUZipNscgySEOXoqtFRp8tpVOOd5eHqK5LVSVc1Coz-6ZqPG9SB1jpkw0RMg/s500/s20-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>Samsung S20</p>
+                     </div>
+                     <button id="button" onclick="s20()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgByH3TBnO-mYNAGk8XH8SOM5SqCSJPUUaiAMt6D5EXx7rAW8nJFDwbrCBk2lQ4dc4wgU89Ye5gyk-c7SR6DYMt3jJ2d5IC778ReR_x0J3yBlux4Vv8yZkEvHJL7O-LlfF_q1ML0dJqoX2pAqGdRqb3XfudtEZB_ZXAlNd1MBqd3Y5QXccGgeFAExggCg/s500/galaxy-s20-plus-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>Samsung S20 plus</p>
+                     </div>
+                     <button id="button" onclick="s20plus()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJqUKtWOckbsmO-kYKbeahK0cs_j4G8pNgPM9Z3W0etpQS85KwDjtli0vYUJ8O2854N8pHBSZBpQNyX7leXG18A-vN3gejrIw6N6kFgYHB-jLBcwc8RFjwGYyMBHsfqGT_0N9wuUwUIZmgwqZXH389lfKCp6VQ_iBJp5STk_tNLoybZ6iMHXWWsp1mbQ/s500/a22-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>Samsung A22</p>
+                     </div>
+                     <button id="button" onclick="a22()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_bFHl0QE007xRzFEhUmgi1jmFfEdczyaitAPfORHHwqOgwuGa4JyqLummM6mvk7xS-UYGIOXRt79HLUIyKl8hZRGwoBLmNzQECT11hSOIpuRbRqjmt2WAIvFon8IafMFqk2h-4H9uwW5DAwX9zAEVC713wPq9AJppzg6zD2qYA0_ecAfCBZNa28vhyphenhyphenw/s500/samsung-galaxy-a13--removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>Samsung A13</p>
+                     </div>
+                     <button id="button" onclick="a13()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKJATvTwPtsd1m-TwIyZoQqdPvv3LHpokSospSXtKXGwEgy0cVPZpyynCOqlwUFHBedweyg4HAa2uYCzY5OO1VlaweCzvgFLU_YX-kaYhzjcHmZPXldBNvKyi2yIo9Dy0vdWhyphenhyphen3owONKImcL8QtxMEBt4PmzoaEiALzq_MnhlR-OfGpiB1dZoNOdNJLg/s500/Samsung-Galaxy-A33-5g-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>Samsung A33 5G</p>
+                     </div>
+                     <button id="button" onclick="a335g()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_52T1L1Dd_rbmz-THYUaGWJ9BL_TAQZyCMDqQQp5vMC2fQ0sWoRg24iSHB1xC-zXNsl-OO7wVf3SRkGjKTNz86jjIKohPknLXG0eKl7TsCgaiv19iFCB5mudLVgV7-E1qJBUxzxoqG70SM_2PSgjO_LNa9DNTlE3taNxyRmv3IIBUbKfSXAWE7HhDHw/s500/samsung-galaxy-a34-5g-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>Samsung A34 5G</p>
+                     </div>
+                     <button id="button" onclick="a345g()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6CqAPocS5Y2jPPh-BmP9bJ0qQWuSgTVAvcbt4YpZR3o7m5zemRr9q3TqdUj5-882bvT7kJXs8v-qEGlLs4CeAgxjLPgxUgwBIOw8kljcegOCfWYhiyaLhiCFMsbtDKOwshAJNV_tybtxwL0GuPgRAIacQAES2VX9OkrmId-sEf6_HgA_MLoNkBIbOLw/s500/Samsung-Galaxy-A24-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>Samsung A24 5G</p>
+                     </div>
+                     <button id="button" onclick="a245g()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgehszy8Ropk2YuiEuDonk3PDImhCzw3Egs71XKxlq5ndr9LWwML47H5BUJgTVhbgyIAPM-itWQ3d8ZRMfaLvy6kPN-h7mKEOahzMp722Mvk9idE5dT0Gd7riDbuPCojo4oFbmd_N0Ej6Uo2yNCnaudsaxxrcBhThWEO-omuNTRiyUJ9yuIaIqQe1_rtg/s500/a04s-removebg-preview.pn" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>Samsung A04s</p>
+                     </div>
+                     <button id="button" onclick="a04s()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHwhhQ9FPcDZmuXTAnwpBWQ904L793CivKC74Eaul2hqjChTjZ0DuuDY2CuvbWd6We5wu1CK9vesrdpu-6vDd23hrvJ70_NOwTSPRsSGPCE2tSScLlOMJ9PQd00GtUHIRmF2smfhLDYgH3bjy3zzuD0dUsSa3UzZ0vUEx0ZYlf6q-qm0qH4Q1930Vcew/s500/sm-a04e-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>Samsung A04e</p>
+                     </div>
+                     <button id="button" onclick="a04e()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDwepKD51UP-iNBCo_rQK3ULe1Z9XwwItq_kKGSrXQPn_b_VJNwg8xmSvYJ0p8xoqq5bLSe6VpnWNa260CFTtfF7ULOfN_TikZsDvrtx7cURgJNicyqxrBeU8Cizd21QpPtZKy2VMTMfbMBN8VmqFRTso68WJJdlBQfpe_nuHYsfPRCagIVtTjUROu3Q/s320/Samsung-Galaxy-A04-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>Samsung A04</p>
+                     </div>
+                     <button id="button" onclick="a04()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhu6vloqu9EG8K9SbNoSeBXy_gPsrrXW800Cyry1eQbivvWLdlTkA8IH_zCc6Fcf1cqJ31fppPAeXyakVXyTZ93RenPccSYrlvJe7LM2nbZtXZSPsYDD51SfRY8HvqWyNkDWlh7hjFH07iHCVBTtcyVxS8TVgQqZAKKK3SM8ai-Kb0WnEtizyfHwSuoaA/s500/samsung-galaxy-a40-noir-debloque-logiciel-original-1555739203_L-1-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>Samsung A40</p>
+                     </div>
+                     <button id="button" onclick="a40()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVBqWGswZ5B3ZfYvek7_ycf7OlV3mHwrCCMZAOZ4VvzjALkWKxDLBz59ZAlU1WjSQhmoLuUHmn0KdPKDrinJrhiL41hY24qpFnDnKiAmJu54kV3LjxktqkNOcsKh_roApXQcRuDSVp0r0hkxKqhXa1HmJ_hZA4A-KzciUS0hbMNvcmiS-LTwyrUaBXoQ/s400/Samsung-Galaxy-A03-Core-1-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>Samsung A03 core</p>
+                     </div>
+                     <button id="button" onclick="a03core()">buy</button>
+             </div>
+             </main>
+             <h3>Redmi</h3>
+             <main>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK_VzsoO21UOH7Qw2QZyCc0NPkgDjCjGuuoYZBJdbauNr6Wh4eZOpIVs_Ig40zDMglCc7b80XTuC9R8QOfEa7X_U4H_UOZ_EdExh0yovF6RqpsyLUJM3vnq8yfSjcOf_UP_dLjEVN9tVk8x5zBYOqPSMgJBN3w5XRB4BeTdvlfWWTI1QAFvpUDXOzeig/s500/redmi_a2-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>Redmi A2</p>
+                     </div>
+                     <button id="button" onclick="mia2()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjV4md8W2KhV3nE-m-XMzHe2FmfxPzwVxtXOUI3njDb8Jl5xTMarOvCxC8E-cghc28q1_zHSxyxwRZyXKhcw5oBNFKjMLuxKhSM4EfDXVjSFvKvPra_SR_QkeGHrLNSXqg9aHQ4Sb4FTTjPy7nBfrf5SdNqd1UPo9Msx5bbxtCIith5slv_rNNLXhYmew/s500/mi_a2_plus-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>Redmi A2 plus</p>
+                     </div>
+                     <button id="button" onclick="mia2plus()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJHxCpaBSNsLS_OSwPyZkChJIRdncUxMR3IYYibaGMaSL-jpFIXcQOMi1SqVAYbSnZKBqx25-Kbd_X_mYA6XKp9_u5WKIHCoTT1XFRcixsHZdLsKqFS0jF6Y0txNAdS-Uod_JDMvysC-Kp1R29MpAhsjPXhpGLZTSbdXIpYqHoH04R3HgFKwdHu7FWmQ/s500/mi_12c-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>Redmi 12C</p>
+                     </div>
+                     <button id="button" onclick="mi12c()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJOzzx23c5P0T0pUXeHZ463obWWj9Qk3N9SkVxaMdWJorvYsjUZPJwYXPAVYB-BZksxQvLOkNTUJjWI5uvtc52LQQvN161plrBPoyv2-eLfHzeLPO7L6WAD_QU9EGTe4DbMtx7CXyEoJrli-Tbp_5TbRVy-Qp1EvsWzvWBuEFlJ9LIT7qiMCmXv7tl7A/s480/e79fabe1-xiaomi-redmi-12-colors-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>Redmi 12</p>
+                     </div>
+                     <button id="button" onclick="mi12()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMaD_onzOFDfJXlIiX_ailttAFOxWkfYE8Mri92UD6UUFzzpON_xMLNndJaSGIMwUy-bxq5zOhyphenhyphenWcpGJI60V1SQ0POeO0bkv9yVXYZOELcg744rhhF_o1kP2mYEMpfLFyJ26xXq4kHNovn_u2dk13kWoQcCtUUomDB18PU3-j8v2bkOhRXJr9UGbH3UA/s500/mi_note_12-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>Redmi Note 12</p>
+                     </div>
+                     <button id="button" onclick="minote12()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiR6qnKl_PRMRCYXdotJ1GcGdO3NGqbMBWuOt1OUnxBJqz9zbV6pTkRmjFbFDF80UcmluknE_W49K9uqzjXpRrnq8d798RkYguPDzYrZvG2BHqxSLhcTtAJkxyfaaO_6xHvoq7t1QIig6-GCldU2ZRj7gYbDcGwBhyphenhyphenJeLHWk8VEbc4O0PNquK-AVhyg6A/s500/Redmi-Note-12-Pro-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>Redmi Note 12 pro</p>
+                     </div>
+                     <button id="button" onclick="minote12pro()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKW47V5kmimFTg1qH6qGbEKH3dtPbIcsVoFQShyphenhyphenbaHfyhtPioxP16gZ0UROOCp2_VHS2hW81_QccOc7AxFygPOyeknfbreRB4jex-z9OulJwHbJoqwi4qfGuxptIZdcKtQU8efx_l4wOOjaJfYSemciDEUC4EgNUjuxlvnIRolAIT4IpDj5dsEnCTPeA/s500/mi_note_11-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>Redmi Note 11</p>
+                     </div>
+                     <button id="button" onclick="minote11()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhuiZWD_0HOxVjRBdgD6UehSef8vdIxmZ8zPBxRRUQMwAZXfAsok5KLzsLhs5DURBBKMnmp_l92nNEbD6Q54HgfEUoWHm_6LS9pdNeAD28-KS00ZfsgYthv9dC5-itHLiSYathrOrp1TRpwe60Q6QJoPr1aXkjjmpLRFjjjr4lo_lbzM1l9VW_vpLxa2w/s500/note_9t_main_1-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>Redmi Note 9T</p>
+                     </div>
+                     <button id="button" onclick="minote9t()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2usTxeXNoTSwWqS4S1-hjieAL-mcsSghqe__pBQUSNsvz2SzqR2OQmcvLh8AwzflzdJZ5tdr0Bau47gp5960lCCX4uK4lnUzdpucIw3ZTLOxtAZoPxv8cj6-VE0KejXZ1UgPnGSvoKlHswBpHbobZPsPmkcVHyJZrSbEg18LPflKNVwduqZSKdTDjnQ/s505/mi_note_10-removebg-preview.png " alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>Redmi Note 10</p>
+                     </div>
+                     <button id="button" onclick="minote10()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg164nXJLsq7cAMvwSycx-6aldXioR8XZWtRUYbdSs1TWHujFh_4yMx4O0nLbSeUMfOTMwK7FB6-GWBFWzLgdvEIPZDV0vGmV1JDsMQ8Zrdn5gymDfPhXRLAJZq0MrmiGmJ81IX2WchoQcjvGf0_BmrwDogZUH1zmfIpxBOgAD1x1y94B4hrggj7ke8LQ/s500/mi_10-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>Redmi 10</p>
+                     </div>
+                     <button id="button" onclick="mi10()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIh8igl5BQre1zshk9kbFHqj2Gv3aSPqYx4CHbr57BOCerlK5FIzJLvWJgzMVo1eX01SbP64fDRqYrDs0zO1pUf3lxEcbP4GNyViVUM0zvXOEXhKuvjq2BGdUT7cBBzQD0RsCfQOzfhyDPdS9Ai_l7iYGquUnMDjO34TJnZnB-St5S9j1EANOeD_qxyA/s500/mi_note_10_pro-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>Redmi Note10 pro</p>
+                     </div>
+                     <button id="button" onclick="minote10pro()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKmmvgIXyQxZ1Bow5dZmBZiy_w9eHPYQA9jmriedf5tyxUK5fhj9N-0xvw9_yPBxcdVqdCfgt5v2CV9uEwtMNw7186ARqFR7y4Sx73vbdetdh9Gua23ubs_ayfUpSEywpOk-XCcvz3vATKgWnswq1fSEnXE4G6RFQ49Abe6xRBZze3_cYO1pWQcZjltg/s500/redmi-note-10s-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>Redmi Note 10s</p>
+                     </div>
+                     <button id="button" onclick="minote10s()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjw5_SrgLS2romAX_QwwVGgbxzZw02Cx0-WbAuLZNH7tD4au4ubO_SWEkwV2F57BcfRHMZTyervJ3q1yNOlxUFWXPUoxpAZSAjTECtYBq5Kch4ll-RmCVactaW4B1y_Qg56LilWonVjIgPU0_B-QeY0MCF1v8eoIHkakrCdBEbiQtfRSLqlKIjQDL0sbA/s500/mi_9t-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>Redmi 9T</p>
+                     </div>
+                     <button id="button" onclick="mi9t()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikgQ2MLLrBA-MD3TSAUqlfLdYO6_3LCSRcz_3la36pmXsQRrneUSDbFZMW6Y3uUJDXDiUnfQDpL-kA1KvsZJwHE3u2I29A0k10nUIDyq010Zzihr3xEBf21zU0t1KOI-Te6fdaxcrQoKVDdmaJvUhpkr3e4KsHfZ-ev3fZesIBp3faU1vLEUCuLdlPmw/s320/mi_note_9s-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>Redmi Note 9s</p>
+                     </div>
+                     <button id="button" onclick="minote9s()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_Ygk2Vy9Cz24hI-jibPsJ8rnD2dQSRchXv_0-hIZ9thvr04rTHDywkWscG0NunUqUUx_cxPRPvNxQbRs2NKhZykn-UN1Z3v0eczNY2ibhzQnlq0EWYA_cVGvJF__7YWxN6_QEnvgvcZjuuhuUbp1nCAMIkIpHubO7QxJ5nIK36446h5P8bz8m5wFQxQ/s499/xiaomi-redmi-note-8-pro-6go-128go-bleu-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>Redmi Note8 pro</p>
+                     </div>
+                     <button id="button" onclick="minote8pro()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5cw2PjHmhRw0kTdqHpu0l6IkPdePZxImQqQVNxOQv0elOHAaG3CueeuBMEkNoA6dRPZwn1m3p_D9d1vNhdWSCmqGg3BP5b_CDy_znSOcxinJlrM-KByTWLc489FiKOFIyGIqoKKOx-oBfBx9T7PDNO40T0FP7MQFR6Bf4lWVH7uPe55a-Z7ZvPUPIFA/s530/mi_a1_plus-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>Redmi A1 plus</p>
+                     </div>
+                     <button id="button" onclick="mia1plus()">buy</button>
+             </div>
+             </main>        
+                  <h3>Realme</h3>
+                  <main>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9JNiAt4A0wz2VuSK_tek6yrKplE-n4oYflImh3khjzxKw6Pcois65rB1l2vtHCYdQ8ciMi1_hT1bSeUFDjPP4UF-HfrKn4vOierAwEL586nffocdegjn5g_ZmtUbQ1Q5JjU74p-1tRBDCXknFpkrx2mwxJvFaru6FSB9wihLN9buHBiuP7ml_tFFFUA/s500/realme_c30s-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>Realme C30s</p>
+                     </div>
+                     <button id="button" onclick="mec30s()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7-UDbL-luhNnU64DLpUU2jFfiaS_O4UBnNPVB_l6p8oBRasEDqQ0FjGiyykiX3X-gUHjJdHzjd7bZUZgXUU2ckQXrQ1wp17EbwFTiSbkN_tTtzq1pEOGZE5cmX_ixzJ8dazrFgyljFZS0SKleOAMRU2XNgwXlDxVHdCsauJBmxleu8gxINjRLOfxBEQ/s500/realme_c53-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>Realmi C53</p>
+                     </div>
+                     <button id="button" onclick="mec53()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1-yibE6DZfklzazOcRGNTFLvyda0faXWo8MhZJg7Nt_m8ZEGPDmmmCzBvmNvtRHs4PPn7MZ9VoAHhcivwPqtE2SOeiccKnnckE7WXc6YkK3OjuInxZ-cQK95zXBdnWdzldkUVyKSsCrb4PkasdIrG6I2p39qNWu1QYFmYdLY80meEdrZqku2A7b3Ang/s500/realme_c55-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>realme c55</p>
+                     </div>
+                     <button id="button" onclick="mec55()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9B1rUKB3GsIBrfdWxfyQ2TOI6nVlLaynalM59TwHhF1iEhvexuT0iiFJyEZ48QGAbw3HQq3e706MmPH_cchXpoNn7rExAKII3SypXMZu7unajzCCHphBNtxQTskweV2JvVadibwO0tR0oWPhqiXsvOHPu6QxLjVP7xJaFzc3u2PxfizmZ9PGfv4euUg/s500/realme_c33-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>Realme C33</p>
+                     </div>
+                     <button id="button" onclick="mec33()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbrOiFYtZEu16653_wtZi1OlauGIssJOHfGkWwd3JaSrm0dnc_k5qgApJ4rxo2yFZtrv9xOwgdRrjkVoy72eV_iiZnSz2wut8AfbmqOrDNBRCcrTjdV0YgQzqTZXoP7txU-_AspCIiN5s9B8zAGeTzJnoS907yhUkqCJbQM8zxOS_jD07Z8Ww8YG26jQ/s500/realme_10-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>Realme 10</p>
+                     </div>
+                     <button id="button" onclick="me10()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVL9Y82dYI6fEXijNmVWrzjHUR3M4xoYjAX8fsHEzewnY9-jTut8KTAisfIEvPLtzvuNUwqf3cSXulYQf2bsIkR8ykesUiKpO5HVPVLI0MWGSB_Yw3UbhHn0XAszC2oMl4o_CerulzivOD0jVvgns4kAhVlAOUKd5X3O5wAt3SMoeWfJC84unrBgS51g/s500/realme_c35-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>Realme C35</p>
+                     </div>
+                     <button id="button" onclick="mec35()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhT4Av7y81J7FZ7wsIIQYMuseTsMK_QyDChSc2UnuYBOEeNGbkJxan4CZSEJm9GUU_CwEFyjh9htI_ehFou2HGPDr8hL3CqRvm2BbE4Ie0yNSzU9yNvmMYVpWvbmbUJ42Z6UVf3-ovfkwwGWJLQWNFnpHqn0ZdDasr68VoDm-tO23GvTndLZVQtM3H3AA/s500/realme_8pro-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>Realme 8 pro</p>
+                     </div>
+                     <button id="button" onclick="me8pro()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZQEoatTlGvwYG8T5hx1aVPZ0ekz8B1o9BSUDmspXev1_pADD4hfWkqrE8daty7wd2Lrn31gMVqUAhqAYmMZBkEIoh9IlbG80c3cMgJ4t0dAblHLqWSs_2LFaBrL8SRj1Phz7W8ZX6P7mF9EA5RIvS_HH3cu8lpIA_EnmtBClq-pd0qf6qtW0YYc0iIQ/s500/realme_11_pro_plus-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>Realme 11 pro</p>
+                     </div>
+                     <button id="button" onclick="me11pro()">buy</button>
+             </div>
+             </main>
+             <h3>infinix</h3>
+             <main>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEireFqlpQbHUsupC-FgbxAzfpqYlita1YEjNx4RrPL6x0mf0l2Gsa6Ippv_hXupSbR1dl5dr3WXzrSfFM2eLJ8NIeQAc25Sp_bCMLh7vm3n3ZQdFFRucPW5GtjxtIWW9VS-N2I_M3A-R8_7C5WMhLhX9RIoaSDS6ixlR67snJRGWPkFbGA9Pf1GjadLxg/s320/infinix_smart_7-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>infinix smart 7</p>
+                     </div>
+                     <button id="button" onclick="smart7()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhtSWhcuoQxX6rfkQ1h4ycSkimLXyTfAStYJqS_i5O7fkHF7r0hNI2cT-fy3MNf8NP6urSPGP1Bj3xtmsFxZlwyzX_sfmWXPLalMtmDBKMRs-tkGxtHaicIcTdStpqnKt9LchZGbu9pOKw_SHb24o9BFQ5Ezh_Olyi95gSGjO0vUj-wnMslIOFiI6Bfw/s500/infinix_hot30-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>infinix hot 30</p>
+                     </div>
+                     <button id="button" onclick="hot30()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_r0bfgvZwnEtq3GVWhco2QJnujjfuNq_zRfD0unpCig_6_2yyDXSxBVrquqeICWn0PsxTmwIGabHxPEqPs9ZPN19OA2JbsonqlsMRw9_ZgI3-qjGmls0N5tbRRZ9CFa7DcqHgxG9KfRB8qxS6W7RjZ9AaAq6qgFThCCfpGAkRPqIJ0cz2qEYUz-7G7A/s500/infinix_hot30i-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>infinix hot 30i</p>
+                     </div>
+                     <button id="button" onclick="hot3oi()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3JLxrKNd031KWYwJig8oJU5QIA7T3tuD8BgMT6nEReQ9Sa89Unf-S0_rNkrJOxVFQHNTBNO4glEQmg0PwebAZEYlrGrgTSD2J6Oe_qF9MspyXu1ZIJOkoBjZUAf2lA5GdS9MuhZHXH_H5MQsiIMZJe7os87hop46JJ5XBW5i05g5sMb3aZEVHPnyyqw/s320/infinix_note_30-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>infinix Note 30</p>
+                     </div>
+                     <button id="button" onclick="note30()">buy</button>
+             </div>
+            </main>
+             <h3>iphone</h3>
+            <main>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8AB3JQneCj2owcowxlrJTgOmtfwbqY6Qy5T4ZAGJZG4eq_I9tVxYA_LTqm0xLXTQFAmchybjdho20CD4TlF0-2CYBhvkvi0TJAcgJNWLJ8ITGaIKxyq6PL7QcBVDj1DVuQ4veOcDxVABR_M8JsHBPzh8AEfodc6YytarZ4rKmR_C7cEpfrodtmDrt2Q/s500/iphone_11_pro-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>iphone 11 pro</p>
+                     </div>
+                     <button id="button" onclick="i11pro()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0KA9YhYCsV2mdIsIWfpz6Ytl17Jd9LAT5nm7fbHOM0HDxrgGW1qz37NlTum24zavWr7PJ4-KDl1l9U6serh2bZy7bw2fHlaZ7J674CFyLhYIx6uaubu3_rhNxzxTfI4KZCLUiUY80UT799oPCta5kWVygDxqQuReaObGAGKYbNDKgKqHE5n8YgA28vg/s500/iphone_X-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>iphone X</p>
+                     </div>
+                     <button id="button" onclick="ix()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgQ02Mr_Xjkflr7eRJTkqeRxCa5nWFy9mBl1ZoNfqIQxQtHXJFXrfSLk6SSZOM71mt34pQjBeDXpUoOFf2MqIB-3o1FUxkPyvHO4xFl9NRZcKccIpi_SPSBfimO1-noturBBL91QNVfSk79GLDXlqmUnVL7LOGumROV9DEQZP8fjnz3h_KawGzDJ6IzQ/s400/iphone_7-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>iphone 7</p>
+                     </div>
+                     <button id="button" onclick="i7()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJ9jOE0xKsj47h1RvuPmWPpqjeEb7GAyqPHQyF06bWiL8aJyvicQGlA-Hm_HYvQ_yMdhuYkn9nN5UoBXwBipeye7rDT2QcVXOMKsNpQR42cHBa0NsOhfH33f4_OM3lcCypLt8PxOpE0n0jYPhYygq-xPMCWyk3I6PdhtAOW5IJmuAvthoyT5aIXueWDA/s300/iphone_7plus-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>iphone 7 plus</p>
+                     </div>
+                     <button id="button" onclick="i7plus()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3cy3-7153YvNN9B7AcBWmDD7Lprv_eHSV3Ff1Qx2FDg64SxqW7eznaf9i6QDT8DFF_vR920x2f_HlIz418K1wj_bG6csMPt3yS3SZlP1dePmx33rcUPF_37gsGI4SpxWtkbkWzChpXFz4UB9AKbncUkykZ7h7fTpRXU_LNf62A9sJgxA19gitgdz_bQ/s500/iphone_12-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>iphone 12</p>
+                     </div>
+                     <button id="button" onclick="i12()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpKbeU0cSw6-gdOFtBhJybdKw1nHnMaTz4OKkAxlUhSiYCzjw_ndzGUFD8s1DBTZkJAqVEEVtrtuupy69fZom5EaO_ehsJ-5-cEEQSRBOsE7r72Pfqi_sxoQKk3D0s6JrGyCwu7Sm3ldD7CChAN1tMqP1DfbGiuHrdgYCD3U1Vky6jJ4xqSsyckUwVwA/s500/iphone_xr-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>iphone Xr</p>
+                     </div>
+                     <button id="button" onclick="ixr()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYwtfgwRBTdlDRUir37fUQWksN4cPrJLmZO25K35HfdUVCCv5x1GX8eZ2CxKJXhhembj0bpyje0xZ9UKbh_xm0AHXMTnarjvLhzvjcAfAKxlISmfg2-ssbsIlRrq5pNfobB6d4AIGsDGRNZfCQTHCIkF-I7SaSq8oFdp_t_EpnIUjqCm23fC50g-s6tA/s500/iphone_8-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>iphone 8</p>
+                     </div>
+                     <button id="button" onclick="i8()">buy</button>
+             </div>
+             <div class="card">
+                 <div id="className" class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggRLPyzCXlX2pioOxvgpKlGMsLH-3Dhealn4ywCvUUYCZ_P6MRRdhmOBnovfw8Pip3DGTf0odB5E4a_3nqM3zbKFh9OlhZm7X55GIDREZZkPzVL5rPH6Ij7MG4cumZZK_hXqAX3pGpwH9ZebBFQnMdYVhvCj5X1XZGU5oqB8YQrJSn0xe6woTYhedtYg/s511/apple-iphone-8-plus-3-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>iphone 8 plus</p>
+                     </div>
+                     <button id="button" onclick="i8plus()">buy</button>
+             </div>
+            </main>
+             <h3>itel</h3>
+              <main>
+             <div class="card">
+                 <div id="className" class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFHOj7W73OSxYXrQH50ob4KtvWIfjZifbVghzpchD7eprjQmsNfohPJTxoZfAN_Nn2Ci9So4soEjI0ejWj87gAdBx5se8UnpGbWCu54RVW1P7fG8R-dNMDs5rXnhWDAtml13VKpMuMqIvbRtNoo3JkdmhRL7A4-WTlW_mUDBvDXPlRVSibaTJBsw-lyA/s500/Itel-S23_plus-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>itel S23</p>
+                     </div>
+                     <button id="button" onclick="itels23()">buy</button>
+             </div>
+             <div class="card">
+                 <div id="className" class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgw_EdCRvNt6GyojxIwYfYQn9NxA7agqx95-4DcAq_v41bfXUg0K2t6StSwIk7D5DeZbSTN6SxO4nTzhKzmnzO4As_FLnGb_Zv7BnFfCLw_olE_N_-GK_8pN6yBFfMcVA23Knn5ys-JAxVg-CAbyMrhwFvls0QvqT6jxd2ReDULdoOXbXz5td9EKV-Qqg/s500/itel_a33_plus-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>itel A33 Plus</p>
+                     </div>
+                     <button id="button" onclick="itela33()">buy</button>
+             </div>
+             <div class="card">
+                 <div id="className" class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxPJJUAQqXdRjiaLbTMg4xV-Y8_Z8bcl7USnHrsD6JECRr5-m6W77u2kblfW8t1qQG5jT3gDVQgNvtTWDwNRrs4K0kpMKm5t-0r7SR_-HnHpLKHaEZWzhqq5vfjTgOLiaoqEimqumL0kKptMfOAAls6HGxGtkyo8UEq5zBAcElduMUYY19BQON2st3BQ/s500/itel_a49-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>itel A49</p>
+                     </div>
+                     <button id="button" onclick="itela49()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzpAw_i6o6TN8RYYFVXLWZryEn5K0yJeSo5Jq_fxbfIWPLvkHyG80V8MWYVMrDcgi2H94T6X4YltYCJVdp9LMRDszdkmjVAp0pxmgnkToc02tYBo8L_Dv4aOqv-8_5P7NVA7LZPSmjXNL-xTOyfwW7iUcfJM-6ofPrCEhsL3QIsXKUQ4HaicpmCGqGxg/s500/Itel_A56-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>itel A56</p>
+                     </div>
+                     <button id="button" onclick="itela56()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMWKILLa0Wyhhwctb81OoWdUG0TwcMhNRW-Ua7ptx7h1MjuR_mbmY1GKxnyU3qo8SdiLf2HDrHT8akSQVdE7VqsSC0R0MObpusDSEWLuW1ze3j-13SHdTMEmAEXswCB3iqDllxbT8EppBtHNzZlnzeQKiEzhnJN8biSBdsQoHpwUWkIMzWZ-Vbb8lwqA/s320/itel_a58_pro-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>itel A58</p>
+                     </div>
+                     <button id="button" onclick="itela58()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEic3cYTdvzLc5QIuGhUjrxF7wh8hcAUuaPmUS6DQryiSxeDbvV7N2CTq0U7OsP2jNLcuqyWpPHdqZK7royvffxBVC-gCcrskMbF3eP_tDDtHPN4ejNBIS_ewrKpHedkDdRzk6s78AX6hSlwAcWxgzE-kCLcpaefeQqwPBbqHjS0z3aQhbw3dbY0JYS1Uw/s247/itel_a70-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>itel A70</p>
+                     </div>
+                     <button id="button" onclick="itela70()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWBr-KHpAJco8FvccfGp0SnCisjqFrDNsoLaWG_EhIAiPHJPhbEKcOARodXEKhtjHn95h8fRAW_ldX6BxLrX3j5vOWHlzxT7eR821qZ_QLrMkcO9nCQehFOAjqqdGTL0RFhI8uW8BvyzAa8Am2CCuSknbNHbdN8yacDiQTz3UX7ohfIexvbdfXnmVEqw/s500/itel_p40_plus-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>itel P40 Plus</p>
+                     </div>
+                     <button id="button" onclick="itelp40plus()">buy</button>
+             </div>
+             <div class="card">
+                 <div class="card-img">
+             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWRYAwKCYub3ow9pspAMBVhWW4npBSakubUPvQX8SaaFC75zrnrlqoAFGGhGDvfm3Pt0Kadnubj-X_fzeOruV87z89KknVSik-veEXk-_7Pb4my9z1mhTfOq9NNq9PYj2OpszM7JKxesGDDKgoXJsVMj0fiRHMbJgpvMCH8a-w4i5-WsiFlyr8dvBReA/s500/itel_s18-removebg-preview.png" alt=""> 
+              </div>
+                 <div class="cont">
+                     <p>itel S18</p>
+                     </div>
+                     <button id="button" onclick="itels18()">buy</button>
+             </div>
+            </main>
+         <footer> 
+            
+             <a href="https://web.facebook.com/profile.php?id=100066779074173"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifzVHZSgU8nqZQ9kRdXlezzWqn4tooWz5vRrK1f4IuqvrKvpCER84yikJod9gHkWtY3gv6DVJMIlUMTd0GiFQw9PDy95XGrMgkuKDO4FHo0rE1vDVGMqPKOOo61lmP80yhXnXnHATFlUcWEUNX0GM9nQx90mfKjLD42FvVWkc-_TJBrNtbqYp4VK589A/s512/facebook.png" alt=""></a>
+             <a href=""><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSx___j3YxKLKxviBIK17HuzmvhShN9_NgZfdPfm9TeIQtnaYDmslHYq8knd2qkywLp0Lv6P-_cAKkzwfaG3hWPwG3EcOUG-4JmTk7tjBSerSkTOTnvERyeHSuo33A_ROQLdYf4zg3G28Y-mvUYvFAF9gmQJBXEQAVQWaN-2KopdeCBmK2eY8M2ihOEQ/s512/instagram.png" alt=""></a>
+             <a href="https://maps.app.goo.gl/rcQeDCL351u7vCZg7"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjtUrsZZQwBxGwogd3v7FrYN_MOysYU_m1DcsoE5ni3GOrLqqMvbRCjMWRQc55nS3cpp7hLCghFoltsl7VVzeMkmDWFe-011QjeaQO3bJA4VeSBMQ1ctRYYFa4Ai6b68yXpWj6qYUlJNIcu0sMwzZI6FjQuRGK7YEZq5LL4uGMHWAHhgr5-14KPULrmQ/s512/google-maps.png" alt=""></a>
+             <a href="https://wa.me/212670342822"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQPGFzQqLyYKiMCkFVdyYNMtprTeUEQA03PfM-AFntycPw-YAwvUYb8RfF2Orn7fYUFFdpe_Xu_mm9PxigtQzzYifrTnKLOAcrYV50cu1JLwCbMIcz0xVpJW3YzY8l_rgPXZxA_xEESg-fTcm5EzruibQyEfpeZc4I9MFULOjJHcTrnvxnnocOSxSXAg/s320/whatsapp.png" alt=""></a>
+     
+             <div class="copy">&COPY; MS PHONE 2023</div>
+        </footer>
+         <script>
+             function a03core() {
+                 var phonenumber='212670342822';
+                 var message = 'samsung A03 core هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             }
+             function a52() {
+                 var phonenumber='212670342822';
+                 var message = 'samsung Galaxy A52 هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             }
+             function s21() {
+                 var phonenumber='212670342822';
+                 var message = 'samsung Galaxy s21 هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             }
+             function a515g() {
+                 var phonenumber='212670342822';
+                 var message = 'samsung Galaxy A51 5G هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             }
+             function a50s() {
+                 var phonenumber='212670342822';
+                 var message = 'samsung Galaxy A50s هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             }
+             function a135g() {
+                 var phonenumber='212670342822';
+                 var message = 'samsung Galaxy A13 5G هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             }
+             function a425g() {
+                 var phonenumber='212670342822';
+                 var message = 'samsung Galaxy A42 5G هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             }
+             function a70() {
+                 var phonenumber='212670342822';
+                 var message = 'samsung Galaxy A70 هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             }
+             function a14() {
+                 var phonenumber='212670342822';
+                 var message = 'samsung Galaxy A14 هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             }
+             function s20() {
+                 var phonenumber='212670342822';
+                 var message = 'samsung Galaxy S20 هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             }
+             function s20plus() {
+                 var phonenumber='212670342822';
+                 var message = 'samsung Galaxy S20 plus هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             }
+             function a22() {
+                 var phonenumber='212670342822';
+                 var message = 'samsung Galaxy A22 هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             }
+             function a13() {
+                 var phonenumber='212670342822';
+                 var message = 'samsung Galaxy A13 هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             }
+             function a335g() {
+                 var phonenumber='212670342822';
+                 var message = 'samsung Galaxy A33 5G هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             }
+             function a345g() {
+                 var phonenumber='212670342822';
+                 var message = 'samsung Galaxy A34 5G هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             }
+             function a245g() {
+                 var phonenumber='212670342822';
+                 var message = 'samsung Galaxy A24 5G هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             }
+             function a04s() {
+                 var phonenumber='212670342822';
+                 var message = 'samsung Galaxy A04s هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             }
+             function a04e() {
+                 var phonenumber='212670342822';
+                 var message = 'samsung Galaxy A04e هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             }
+             function a04() {
+                 var phonenumber='212670342822';
+                 var message = 'samsung Galaxy A04 هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             }
+             function a40() {
+                 var phonenumber='212670342822';
+                 var message = 'samsung Galaxy A40 هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             } 
+             function mia2() {
+                 var phonenumber='212670342822';
+                 var message = 'Redmi A2 هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             } 
+             function mia2plus() {
+                 var phonenumber='212670342822';
+                 var message = 'Redmi A2 Plus هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             } 
+             function mi12c() {
+                 var phonenumber='212670342822';
+                 var message = 'Redmi 12C هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             } 
+             function mi12() {
+                 var phonenumber='212670342822';
+                 var message = 'Redmi 12 هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             } 
+             function minote12() {
+                 var phonenumber='212670342822';
+                 var message = 'Redmi Note 12 هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             } 
+             function minote12pro() {
+                 var phonenumber='212670342822';
+                 var message = 'Redmi Note 12 pro هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             } 
+             function minote11() {
+                 var phonenumber='212670342822';
+                 var message = 'Redmi Note 11 هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             } 
+             function minote9t() {
+                 var phonenumber='212670342822';
+                 var message = 'Redmi Note 9T هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             } 
+             function minote10() {
+                 var phonenumber='212670342822';
+                 var message = 'Redmi Note 10 هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             } 
+             function mi10() {
+                 var phonenumber='212670342822';
+                 var message = 'Redmi 10 هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             } 
+             function note10pro() {
+                 var phonenumber='212670342822';
+                 var message = 'Redmi Note 10 pro هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             } 
+             function minote10s() {
+                 var phonenumber='212670342822';
+                 var message = 'Redmi Note 10s هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             } 
+             function mi9t() {
+                 var phonenumber='212670342822';
+                 var message = 'Redmi 9T هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             } 
+             function minote9s() {
+                 var phonenumber='212670342822';
+                 var message = 'Redmi Note 9s هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             } 
+             function minote8pro() {
+                 var phonenumber='212670342822';
+                 var message = 'Redmi Note 8 pro هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             } 
+             function mia1plus() {
+                 var phonenumber='212670342822';
+                 var message = 'Redmi A1 plus هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             } 
+             function mec30s() {
+                 var phonenumber='212670342822';
+                 var message = 'Realme C30s هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             } 
+             function mec53() {
+                 var phonenumber='212670342822';
+                 var message = 'Realme C53 هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             } 
+             function mec55() {
+                 var phonenumber='212670342822';
+                 var message = 'Realme C55 هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             } 
+             function mec33() {
+                 var phonenumber='212670342822';
+                 var message = 'Realme C33 هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             } 
+             function me10() {
+                 var phonenumber='212670342822';
+                 var message = 'Realme 10 هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             } 
+             function mec35() {
+                 var phonenumber='212670342822';
+                 var message = 'Realme C35 هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             } 
+             function me8pro() {
+                 var phonenumber='212670342822';
+                 var message = 'Realme 8pro هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             } 
+             function me11pro() {
+                 var phonenumber='212670342822';
+                 var message = 'Realme 11pro هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             } 
+             function smart7() {
+                 var phonenumber='212670342822';
+                 var message = 'infinix Smart 7+ هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             } 
+             function hot30() {
+                 var phonenumber='212670342822';
+                 var message = 'infinix Hot 30 هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             } 
+             function hot3oi() {
+                 var phonenumber='212670342822';
+                 var message = 'infinix Hote 3oi هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             } 
+           function note30() {
+                 var phonenumber='212670342822';
+                 var message = 'infinix Note 30 هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             } 
+             function i11pro() {
+                 var phonenumber='212670342822';
+                 var message = 'iphone 11 pro هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             } 
+             function ix() {
+                 var phonenumber='212670342822';
+                 var message = 'iphone X هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             } 
+             function i7() {
+                 var phonenumber='212670342822';
+                 var message = 'iphone 7 هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             } 
+             function i7plus() {
+                 var phonenumber='212670342822';
+                 var message = 'iphone 7 plus هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             } 
+             function i12() {
+                 var phonenumber='212670342822';
+                 var message = 'iphone 12 هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             } 
+             function ixr() {
+                 var phonenumber='212670342822';
+                 var message = 'iphone Xr هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             } 
+             function i8() {
+                 var phonenumber='212670342822';
+                 var message = 'iphone 8 هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             } 
+             function i8plus() {
+                 var phonenumber='212670342822';
+                 var message = 'iphone 8 plus هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             }
+           function itels23() {
+                 var phonenumber='212670342822';
+                 var message = 'itel S23 هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             }
+             function itela33() {
+                 var phonenumber='212670342822';
+                 var message = 'itel A33 هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             }
+             function itela49(){
+                 var phonenumber='212670342822';
+                 var message = 'itel A49 هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             }
+             function itela56(){
+                 var phonenumber='212670342822';
+                 var message = 'itel A56 هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             }
+             function itela58() {
+                 var phonenumber='212670342822';
+                 var message = 'itel A58 هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             }
+             function itela70() {
+                 var phonenumber='212670342822';
+                 var message = 'itel A70 هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             }
+             function itelp40plus() {
+                 var phonenumber='212670342822';
+                 var message = 'itel P40 plus هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             }
+             function itels18() {
+                 var phonenumber='212670342822';
+                 var message = 'itel S18 هل لا زال متوفر';
+                 var whatsappUrl = 'https://wa.me/' + phonenumber + '?text=' + message;
+                 window.open(whatsappUrl);
+             }
+     
+         </script>
+</body>
+</html>

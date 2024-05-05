@@ -1,0 +1,674 @@
+body{
+    background: linear-gradient(45deg,rgb(91, 255, 59),rgb(255, 248, 148),rgb(191, 79, 255));
+padding: 0;
+margin: 0;
+text-align: center;
+}
+header{
+    width: 100%;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+}
+header .me{
+    width: 40%;
+    height: 100px;
+    background-color: rgb(147, 8, 228);
+    float: right;
+}
+.me h1{
+    float: left;
+    margin-left: 10px;
+    margin-top: 30px;
+    color: #ffffff;
+}
+.me .logo{
+    width: 15%;
+    float: right;
+}
+header .ul{
+    float: left;
+    width: 60%;
+    height: 100px;
+    background-color: rgb(147, 8, 228);
+    padding: 0;
+    margin: 0;
+    
+}
+.ul img{
+    float: left;
+width: 8%;
+margin-left: 40px;
+margin-top: 20px;
+}
+h3{
+    margin: 10;
+}
+main{
+    margin: 0;
+    padding: 0;
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+  
+}
+.card{
+    position: relative;
+    width: 20%;
+    height: auto;
+    margin: 5px;
+    transition: 0.5s ease;
+    background: #535151;
+    text-align: center;
+    border: 3px solid rgb(100, 100, 100);
+
+}
+.card .card-img{
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+     
+}
+.card-img img{
+    width: 90%;
+    
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s ease;
+    opacity: 0.5;
+}
+.card p{
+    text-align: center;
+    margin-top: 85%;
+    width: 100%;
+    background-color: rgb(141, 141, 141);
+    position: absolute;
+    color: #ffffff;
+}
+.card button{
+margin-top: 90%;
+width: 100%;
+height: 30px;
+background-color: rgb(140, 22, 236);
+color: #ffffff;
+}
+.card:hover .cont{
+    opacity: 0;
+}
+.card:hover .card-img img{
+    opacity: 1;
+    transform: scale(1.1);
+}
+h3{
+    width: 100%;
+    color: #000000;
+    background: rgba(233, 235, 234, 0.336);
+    height: 50px;
+    padding-top: 20px;
+    margin-top: 10px;
+}
+#button:hover{
+    background-color: #ffffff;
+    color: #2d0036;
+}
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: #7115a7;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+footer img{
+    width: 40px;
+    margin-bottom: 10px;
+    padding-left: 40px;
+}
+.copy{
+    font-size: 20px;
+    color: #ffffff;
+    margin-left: 10px;
+}
+@media only screen and (min-width:100px ) and (max-width:480px ){
+    body{
+        background: linear-gradient(45deg,rgb(91, 255, 59),rgb(255, 248, 148),rgb(191, 79, 255));
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    }
+    header{
+        width: 100%;
+        height: 70px;
+        padding: 0;
+        margin: 0;
+    }
+    header .me{
+        width: 40%;
+        height: 70px;
+        background-color: rgb(147, 8, 228);
+        float: right;
+    }
+    .me h1{
+        float: left;
+        margin-left: 0px;
+        margin-top: 30px;
+        font-size: 12px;
+        color: #ffffff;
+    }
+    .me .logo{
+        width: auto;
+        height: 100%;
+        float: right;
+    }
+    header .ul{
+        float: left;
+        width: 60%;
+        height: 70px;
+        background-color: rgb(147, 8, 228);
+        padding: 0;
+        margin: 0;
+        
+    }
+    .ul img{
+        float: left;
+    width: 15%;
+    margin-left: 20px;
+    margin-top: 20px;
+    }
+    h3{
+        margin: 10;
+    }
+    main{
+        margin: 0;
+        padding: 0;
+        display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+      
+    }
+    .card{
+        position: relative;
+        width: 40%;
+        height: auto;
+        margin: 5px;
+        transition: 0.5s ease;
+        background: #636262d5;
+        text-align: center;
+        border: 3px solid rgb(0, 0, 0);
+    
+    }
+    .card .card-img{
+        position: absolute;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+         
+    }
+    .card-img img{
+        width: 90%;
+        opacity: 0.8;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        transition: 0.5s ease;
+    }
+    .card p{
+        text-align: center;
+        margin-top: 85%;
+        width: 100%;
+        background-color: rgb(141, 141, 141);
+        position: absolute;
+        color: #ffffff;
+    }
+    .card button{
+    margin-top: 90%;
+    width: 100%;
+    background-color: rgb(121, 8, 250);
+    color: #ffffff;
+    
+    }
+    .card:hover .cont{
+        opacity: 0;
+    }
+    .card:hover .card-img img{
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    h3{
+        width: 100%;
+        color: #000000;
+        background: rgba(233, 235, 234, 0.336);
+        height: 50px;
+        padding-top: 20px;
+        margin-top: 10px;
+    }
+    #button:hover{
+        background-color: #ffffff;
+        color: #2d0036;
+    }
+    footer{
+        width: 100%;
+        height: 80px;
+        background-color: #7115a7;
+        text-align: center;
+        padding-top: 10px;
+        margin-top: 20px;
+    }
+    footer img{
+        width: 40px;
+        margin-bottom: 10px;
+        padding-left: 40px;
+    }
+    .copy{
+        font-size: 20px;
+        color: #ffffff;
+        margin-left: 10px;
+    }
+}
+@media only screen and (min-width:481px ) and (max-width:768px ) {
+    body{
+        background: linear-gradient(45deg,rgb(91, 255, 59),rgb(255, 248, 148),rgb(191, 79, 255));
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    }
+    header{
+        width: 100%;
+        height: 100px;
+        padding: 0;
+        margin: 0;
+    }
+    header .me{
+        width: 40%;
+        height: 100px;
+        background-color: rgb(147, 8, 228);
+        float: right;
+    }
+    .me h1{
+        float: left;
+        font-size: 25px;
+        margin-left: 10px;
+        margin-top: 35px;
+        color: #ffffff;
+    }
+    .me .logo{
+        width: 15%;
+        float: right;
+    }
+    header .ul{
+        float: left;
+        width: 60%;
+        height: 100px;
+        background-color: rgb(147, 8, 228);
+        padding: 0;
+        margin: 0;
+        
+    }
+    .ul img{
+        float: left;
+    width: 8%;
+    margin-left: 40px;
+    margin-top: 25px;
+    }
+    h3{
+        margin: 10;
+    }
+    main{
+        margin: 0;
+        padding: 0;
+        display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+      
+    }
+    .card{
+        position: relative;
+        width: 30%;
+        height: auto;
+        margin: 5px;
+        transition: 0.5s ease;
+        background: #444444d2;
+        text-align: center;
+        border: 3px solid rgb(0, 0, 0);
+    
+    }
+    .card .card-img{
+        position: absolute;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+         
+    }
+    .card-img img{
+        width: 90%;
+        opacity: 0.8;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        transition: 0.5s ease;
+    }
+    .card p{
+        text-align: center;
+        margin-top: 85%;
+        width: 100%;
+        background-color: rgb(141, 141, 141);
+        position: absolute;
+        color: #ffffff;
+    }
+    .card button{
+    margin-top: 90%;
+    width: 100%;
+    background-color: rgb(139, 11, 245);
+    color: #ffffff;
+    }
+    .card:hover .cont{
+        opacity: 0;
+    }
+    .card:hover .card-img img{
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    h3{
+        width: 100%;
+        color: #000000;
+        background: rgba(233, 235, 234, 0.336);
+        height: 50px;
+        padding-top: 20px;
+        margin-top: 10px;
+    }
+    #button:hover{
+        background-color: #ffffff;
+        color: #2d0036;
+    }
+    footer{
+        width: 100%;
+        height: 80px;
+        background-color: #7115a7;
+        text-align: center;
+        padding-top: 10px;
+        margin-top: 20px;
+    }
+    footer img{
+        width: 40px;
+        margin-bottom: 10px;
+        padding-left: 40px;
+    }
+    .copy{
+        font-size: 20px;
+        color: #ffffff;
+        margin-left: 10px;
+    }
+    }
+    @media only screen and (min-width:969px ) and (max-width:1279px ){
+        body{
+            background: linear-gradient(45deg,rgb(91, 255, 59),rgb(255, 248, 148),rgb(191, 79, 255));
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        }
+        header{
+            width: 100%;
+            height: 100px;
+            padding: 0;
+            margin: 0;
+        }
+        header .me{
+            width: 40%;
+            height: 100px;
+            background-color: rgb(147, 8, 228);
+            float: right;
+        }
+        .me h1{
+            float: left;
+            margin-left: 10px;
+            margin-top: 30px;
+            color: #ffffff;
+        }
+        .me .logo{
+            width: 15%;
+            float: right;
+        }
+        header .ul{
+            float: left;
+            width: 60%;
+            height: 100px;
+            background-color: rgb(147, 8, 228);
+            padding: 0;
+            margin: 0;
+            
+        }
+        .ul img{
+            float: left;
+        width: 8%;
+        margin-left: 40px;
+        margin-top: 20px;
+        }
+        h3{
+            margin: 10;
+        }
+        main{
+            margin: 0;
+            padding: 0;
+            display: flex;
+           flex-wrap: wrap;
+           justify-content: center;
+          
+        }
+        .card{
+            position: relative;
+            width: 20%;
+            height: auto;
+            margin: 5px;
+            transition: 0.5s ease;
+            background: #535151;
+            text-align: center;
+            border: 3px solid rgb(11, 154, 236);
+        
+        }
+        .card .card-img{
+            position: absolute;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+             
+        }
+        .card-img img{
+            width: 90%;
+            opacity: 0.8;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            transition: 0.5s ease;
+            opacity: 0.5;
+        }
+        .card p{
+            text-align: center;
+            margin-top: 85%;
+            width: 100%;
+            background-color: rgb(141, 141, 141);
+            position: absolute;
+            color: #ffffff;
+        }
+        .card button{
+        margin-top: 90%;
+        width: 100%;
+        background-color: rgb(146, 12, 255);
+        color: #ffffff;
+        }
+        .card:hover .cont{
+            opacity: 0;
+        }
+        .card:hover .card-img img{
+            opacity: 1;
+            transform: scale(1.1);
+        }
+        h3{
+            width: 100%;
+            color: #000000;
+            background: rgba(233, 235, 234, 0.336);
+            height: 50px;
+            padding-top: 20px;
+            margin-top: 10px;
+        }
+        #button:hover{
+            background-color: #ffffff;
+            color: #2d0036;
+        }
+        footer{
+            width: 100%;
+            height: 80px;
+            background-color: #7115a7;
+            text-align: center;
+            padding-top: 10px;
+            margin-top: 20px;
+        }
+        footer img{
+            width: 40px;
+            margin-bottom: 10px;
+            padding-left: 40px;
+        }
+        .copy{
+            font-size: 20px;
+            color: #ffffff;
+            margin-left: 10px;
+        }
+    }
+
+    @media only screen and (min-width:1280px ) and (max-width:2000px ){
+        body{
+            background: linear-gradient(45deg,rgb(91, 255, 59),rgb(255, 248, 148),rgb(191, 79, 255));
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        }
+        header{
+            width: 100%;
+            height: 100px;
+            padding: 0;
+            margin: 0;
+        }
+        header .me{
+            width: 40%;
+            height: 100px;
+            background-color: rgb(147, 8, 228);
+            float: right;
+        }
+        .me h1{
+            float: left;
+            margin-left: 10px;
+            margin-top: 30px;
+            color: #ffffff;
+        }
+        .me .logo{
+            width: 15%;
+            float: right;
+        }
+        header .ul{
+            float: left;
+            width: 60%;
+            height: 100px;
+            background-color: rgb(147, 8, 228);
+            padding: 0;
+            margin: 0;
+            
+        }
+        .ul img{
+            float: left;
+        width: 8%;
+        margin-left: 40px;
+        margin-top: 20px;
+        }
+        h3{
+            margin: 10;
+        }
+        main{
+            margin: 0;
+            padding: 0;
+            display: flex;
+           flex-wrap: wrap;
+           justify-content: center;
+          
+        }
+        .card{
+            position: relative;
+            width: 20%;
+            height: auto;
+            margin: 5px;
+            transition: 0.5s ease;
+            background: #535151;
+            text-align: center;
+            border: 3px solid rgb(100, 100, 100);
+        
+        }
+        .card .card-img{
+            position: absolute;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+             
+        }
+        .card-img img{
+            width: 90%;
+            
+            top: 0;
+            left: 0;
+            bottom: 0;
+            transition: 0.5s ease;
+            opacity: 0.5;
+        }
+        .card p{
+            text-align: center;
+            margin-top: 85%;
+            width: 100%;
+            background-color: rgb(141, 141, 141);
+            position: absolute;
+            color: #ffffff;
+        }
+        .card button{
+        margin-top: 90%;
+        width: 100%;
+        height: 30px;
+        background-color: rgb(0, 192, 16);
+        color: #ffffff;
+        }
+        .card:hover .cont{
+            opacity: 0;
+        }
+        .card:hover .card-img img{
+            opacity: 1;
+            transform: scale(1.1);
+        }
+        h3{
+            width: 100%;
+            color: #000000;
+            background: rgba(233, 235, 234, 0.336);
+            height: 50px;
+            padding-top: 20px;
+            margin-top: 10px;
+        }
+        #button:hover{
+            background-color: #ffffff;
+            color: #2d0036;
+        }
+        footer{
+            width: 100%;
+            height: 80px;
+            background-color: #7115a7;
+            text-align: center;
+            padding-top: 10px;
+            margin-top: 20px;
+        }
+        footer img{
+            width: 40px;
+            margin-bottom: 10px;
+            padding-left: 40px;
+        }
+        .copy{
+            font-size: 20px;
+            color: #ffffff;
+            margin-left: 10px;
+        }
+    }
+    
